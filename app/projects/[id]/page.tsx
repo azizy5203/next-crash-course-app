@@ -3,8 +3,8 @@ import { User } from "@/app/types/user.type";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
-function ProjectDetails({ params }: { params: { id: string } }) {
-  const {id} = params
+async function ProjectDetails({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
   return (
     <Suspense fallback={<div className="app-loader"></div>}>
       <UserDetails id={id} />
