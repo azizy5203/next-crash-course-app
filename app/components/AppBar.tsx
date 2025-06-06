@@ -14,7 +14,7 @@ function AppBar() {
           <Link href="/projects">Projects</Link>
         </li>
         <li>
-          <Link href="/task">Tasks</Link>
+          <Link href="/tasks">Tasks</Link>
         </li>
       </ul>
     </div>
