@@ -26,7 +26,7 @@ async function Projects() {
         <div className='grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {
             usersList.map((user:User)=>(
-            <Link href={`/projects/${user.id}`} className='block border border-slate-500 hover:border-pink-500 hover:bg-white/10 transition-all duration-300 rounded-md p-6'  key={user.id}>
+            <Link prefetch={true} href={`/projects/${user.id}`} className='block border border-slate-500 hover:border-pink-500 hover:bg-white/10 transition-all duration-300 rounded-md p-6'  key={user.id}>
               <h2>{user?.name}</h2>
               <p>{user?.email}</p>
             </Link>
