@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import AppBar from "@/app/components/AppBar";
-import AppFooter from "@/app/components/AppFooter";
+import "../globals.css";
+import AppBar from "@/components/AppBar";
+import AppFooter from "@/components/AppFooter";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <div className="h-screen flex flex-col gap-4 overflow-auto">
           <AppBar/>
-          <main className="container px-4 md:px-8 lg:px-0 mx-auto flex-grow">
+          <main className="container px-4 mx-auto flex-grow">
             {children}
           </main>
           <AppFooter/>

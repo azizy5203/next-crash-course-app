@@ -8,7 +8,7 @@ function AppBar() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link href="/admin">Admin</Link>
         </li>
         <li>
           <Link href="/projects">Projects</Link>
