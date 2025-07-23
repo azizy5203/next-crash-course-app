@@ -30,7 +30,7 @@ export default function AdminLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <SidebarProvider>
           <AppSidebar />
-          <div className="h-screen flex flex-col gap-4 overflow-auto">
+          <div className="h-screen w-screen flex flex-col gap-4 overflow-auto">
             <SidebarTrigger />
             <main className="container px-4 mx-auto flex-grow">{children}</main>
           </div>
